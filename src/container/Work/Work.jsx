@@ -8,7 +8,7 @@ import './Work.scss'
 
 const Work = () => {
     const [activeFilter, setActiveFilter] = useState('All')
-    const [animateCard, setanimateCard] = useState({ y: 0, opacity: 1 });
+    const [animatedCard, setAnimatedCard] = useState({ y: 0, opacity: 1 });
     const [works, setWorks] = useState([]);
     const [filterWork, setFilterWork] = useState([])
 
@@ -25,7 +25,16 @@ const Work = () => {
 
 
     const handleWorkFilter = (item) => {
-
+        setActiveFilter(item);
+        setAnimatedCard([{ y: 100, opacity: 0 }]);
+        setTimeout(() => {
+            setAnimatedCard([{ y: 0, opacity: 1 }]);
+            if (item === "All") {
+                setFilterWork(works);
+            } else {
+                setFilterWork(works.filter((work) => work.tags.includes(item)))
+            }
+        }, 500);
     }
     return (
         <>
@@ -43,7 +52,7 @@ const Work = () => {
             </div>
 
             <motion.div
-                animate={animateCard}
+                animate={animatedCard}
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className='app__work-portfolio'
             >
