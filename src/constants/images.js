@@ -35,6 +35,9 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 
+import logo1 from "../assets/logo1.png";
+import logo2 from "../assets/logo2.png";
+import logo3 from "../assets/logo3.png";
 const images = {
   email,
   mobile,
@@ -69,6 +72,9 @@ const images = {
   nb,
   skype,
   spotify,
+  logo1,
+  logo2,
+  logo3,
 };
 
 export default images;
