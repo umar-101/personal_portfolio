@@ -4,6 +4,7 @@ import { images } from '../../constants'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { client } from '../../client'
 
+
 import './Footer.scss'
 const Footer = () => {
 
@@ -46,7 +47,7 @@ const Footer = () => {
 
                 <div className="app__footer--card">
                     <img src={images.mobile} alt="mobile" />
-                    <a href="tel:+923168982982" className='p-text'>+923168982982</a>
+                    <a href="tel:+923168982982" className='p-text'>+923165889824</a>
                 </div>
             </div>
 
