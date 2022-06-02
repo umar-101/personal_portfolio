@@ -53,3 +53,6 @@ export default AppWrap(
     MotionWrap(About, 'app__about'),
     'about',
     'app__whitebg');
+
+
+    // this is the about section
