@@ -24,6 +24,7 @@ import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 
 import profile from "../assets/profile.png";
+import profile1 from "../assets/profile1.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 
@@ -75,6 +76,7 @@ const images = {
   logo1,
   logo2,
   logo3,
+  profile1,
 };
 
 export default images;
